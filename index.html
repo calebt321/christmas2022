@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Christmas Lists</title>
+        <script type = "text/javascript">
+        function fn1()
+        {
+            var str1 = document.getElementById("text1").value;
+            window.location.href = ('https://calebt321.github.io/christmas2022/' + str1);
+        }
+        </script>
+    </head>
 <body>
 
-<form method="post" action="checkin.php" name="christmaslist" id="christmaslist">
+    <input id="text1" placeholder="Just your first name please">
 
-<p> Name: <input type="text"  name="input" placeholder="First Name"/> </p>
+    <button onclick="fn1()" id = "btn1">Submit</button>>
 
-<input type="submit" name="submit" value="Submit Form">
-
-</form>
 </body>
-
 </html>
